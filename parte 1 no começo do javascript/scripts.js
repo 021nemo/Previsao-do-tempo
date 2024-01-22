@@ -1,6 +1,6 @@
 
 
-const key = "6f0ff2b5c350846b3a3f7027b7a2bf32"
+const key = ""
 /*fomos em um site que buscamos essa chave de api gerada para nossa conta*/
 
 function cliqueinobotao() {   

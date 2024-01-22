@@ -1,0 +1,95 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ /*esses primeiro atributos q ele zerou foi pra tudo, segunndo o rodolfo os sites por padrão tem suas medida e quando voce não zera pra voce colocar os atributos do zero fica tudo bagunçado logo em seguida nossas tags do html ficaram "  coladinhaskkk"*/
+    font-family: 'Open Sans', sans-serif;
+    /*font do google do css*/
+}
+
+body {
+    height: 100vh;
+    width: 100vw; 
+    /*antes de cololocarmos uma imagem de fundo, nos colocamos o body pra ocupar a tela toda colocando a altura e largura do body em 100vh heigth(altura) e 100vw width (largura)*/ 
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    /*para jogar todo mundo pro centro nos colocamos o "display: flex;" e e usa duas propriedades em seguida  "justify-content: center;" que vai alinhar no eixo horizontal e o align-items que vai alinhar no eixo vertical*/
+    background-image: url("https://images.unsplash.com/photo-1515612148533-6247582c12c7?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTcwNTI3MTk1NQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600");
+    /*imagem de fundo ele coloca um site que a imagem muda toda hora para o fundo na nossa aplicação ter várias imagens porém no  nosso queremos personalizar usando js para mudar a imagem de fundo referente ao clima*/
+}
+
+.caixa-maior{
+    background: #000000;
+    opacity: 0.8;
+    border-radius: 25px;
+    padding: 20px;
+    width: 95%;
+    max-width: 450px;
+
+    /*para chamar uma classe colocamos um ponto na frente. em seguida ele coloca "opacity" para dar uma trasnaprência nele, e o "border-radius" serve para arredondar as borda
+    o padding das espaço para que os elementos não fiquem tão grudados na borda*/
+}
+
+.input-cidade{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: #7c7c7c2b ;
+    color: #ffffff;
+    width: calc(100% - 70px)
+    /*tiramos a borda padrão e o "outline" que é uma linha azul q o google bota automaticamente, e o "width: calc(100%-100px) serve para regular o 
+    tamanho do nosso input q é essa barra de pesquisa*/
+}
+
+.botao-buscar {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #7c7c7c2b;
+    cursor: pointer;
+    float: right;
+/*Como no exemplo acima, nos zeramos "border" e "outline" demos um espaço de 10px com o "padding"
+arredondamos a borda do butão de bussola(que é o .botao-busca) usando o "border-radius". com o cursor "pointer" nos passamos o mouse em cima e aparece a aquela maozinha pra clicar, como o "float" eu achei mt daora que chegou todo pro lado direito*/
+}
+
+.img-busca{
+   width: 20px;
+}
+
+.caixa-media{
+    margin-top:30px;
+
+}
+
+.cidade{
+    color:#ffffff;
+    font-size: 28px;  
+    font-weight:500;
+}
+
+.temp {
+    font-size:20px;
+    color: #ffffff;
+    margin-top:25px;
+}
+
+.caixa-menor{
+    display: flex;
+    align-items: center; 
+    margin-top: 20px;
+    /*aqui além do "display: flex;" ele usou o "allign-items" para poder colocar o nublado do lado da nuvem que antes tava em cima*/
+}
+
+.texto-previsão{
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+.umidade{
+    color: #ffffff;
+    margin-top: 20px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv=x-ua-compatible content=ieedge chrome=1>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&family=Poppins:wght@300&family=Rubik+Doodle+Shadow&display=swap"rel="stylesheet">
+    <script src="scripts.js"></script>   
+    <!-- depois de ir no google fonts, nos escolhemos a font e clicamos na opção "<link>" no canto direito inferior, o google fonts nos da duas opções em css e html no caso esse links rel acima são as fontes do google em html logo depois vamos fazer isso em css-->
+    <title>Previsão do tempo </title>
+</head>
+
+<body>
+    <div class="caixa-maior">
+        <!--para estilizar nossas letras do clima ele faz com que a div vire uma classe pois e dentro dela que estão os componentes que queremos alterar. eles chama a div de "caixa maior já que é realmente nossa maior caixa"-->
+
+        <input class="input-cidade" placeholder="Digite o nome da cidade">
+        <!--Para que serve o atributo placeholder? Esse atributo cumpre a função de disponibilizar ao usuário uma dica que descreve o valor esperado em um determinado campo de entrada. No input ele adciciona uma "class" chamada "input-cidade"-->
+        <button class="botao-buscar" onclick="cliqueinobotao()">
+            <img class="img-busca" src="https://www.svgrepo.com/show/488200/find.svg">
+        </button>
+        <!--dentro do botão vamos colocar uma imagem de lupa para simbolizar o pesquisar, logo em seguida vamo no css estilizar eles. Mais a frente nos vamos dar uma função chamada 'onclick' para o botão, A função onclick é um dos métodos mais comuns usados para lidar com eventos de clique em JavaScript. Ela é usada para atribuir uma ação a um elemento HTML específico quando ocorre um clique.  -->
+
+        <div class="caixa-media">
+            <h2 class="cidade">Tempo em São Paulo </h2>
+
+            <p class="temp">21°C</p> <!--essa bolinha de graus celsius é uma tecla Alt Gr + E -->
+
+            <div class="caixa-menor">
+                <img class="img-previsão" alt="icone-info-tempo" src="https://openweathermap.org/img/wn/04n.png">
+                <p class="texto-previsão">Nublado</p>
+            </div>
+
+            <p class="umidade">Umidade 76% </p>
+
+        </div>
+
+
+        <!--no "img src" eu fui no site e copiei o endereço da imagem. no "alt" escrevi um texto alternativo do que se referia aquela imagem caso ela na abrisse -->
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
